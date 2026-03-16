@@ -1,0 +1,15 @@
+# Sum of numbers is listed
+
+def sum_of_list(numbers):
+    sum = 0
+    for item in numbers:
+        sum += item
+    return sum
+
+size = int(input("Enter list length :"))
+lst = []
+for _ in range(size):
+    number = int(input("Enter list item :"))
+    lst.append(number)
+
+print("sum of all numbers in list is:", sum_of_list(lst))
